@@ -6,7 +6,7 @@ let num = 50;
 // }
 
 
-for (num; num < 60; num+2) {
+for (num; num < 60; num++) {
     if (num == 55) {
         break;
     }
