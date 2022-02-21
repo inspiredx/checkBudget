@@ -1,3 +1,7 @@
+import {num} from './test';
+import './style.css';
+import './otherTest.css';
+
 let money, time;
 
 function start() { //Объявляем функцию
@@ -77,4 +81,3 @@ function checkSavings() { //Объявляем функцию (Рассчет н
 }
 
 checkSavings(); //Вызываем функцию
-
