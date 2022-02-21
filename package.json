@@ -1,0 +1,23 @@
+{
+  "name": "test-udemy",
+  "version": "1.0.0",
+  "description": "udemy test",
+  "main": "script.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inspiredx/js_Udemy.git"
+  },
+  "author": "Georgiy Kapustin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inspiredx/js_Udemy/issues"
+  },
+  "homepage": "https://github.com/inspiredx/js_Udemy#readme",
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
