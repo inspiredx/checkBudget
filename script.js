@@ -1,4 +1,4 @@
-import {num} from './test';
+
 import './style.css';
 import './otherTest.css';
 
@@ -54,21 +54,29 @@ function chooseExpenses() { //Объявляем функцию
 
 chooseExpenses(); //Вызываем функцию
 
-
-appData.moneyPerDay = (appData.budget / 30).toFixed();
-
-alert('Ежедневный бюджет:' + appData.moneyPerDay);
-
-//Цикл проверки уровня бюджета
-if (appData.moneyPerDay < 1000) {
-    console.log("Минимальный уровень достатка");
-} else if (appData.moneyPerDay > 1000 && appData.moneyPerDay < 5000) { //В противном случае
-    console.log("Средний уровень достатка");
-} else if (appData.moneyPerDay > 5000) {
-    console.log("Высокий уровень достатка");
-} else {
-    console.log("Произошла ошибка");
+function detectDayBudget() { //Объявляем функцию
+    appData.moneyPerDay = (appData.budget / 30).toFixed();
+    alert('Ежедневный бюджет:' + appData.moneyPerDay);
 }
+
+detectDayBudget(); //Вызываем функцию
+
+
+function detectLevel() {   //Объявляем функцию
+    //Цикл проверки уровня бюджета
+    if (appData.moneyPerDay < 1000) {
+        console.log("Минимальный уровень достатка");
+    } else if (appData.moneyPerDay > 1000 && appData.moneyPerDay < 5000) { //В противном случае
+        console.log("Средний уровень достатка");
+    } else if (appData.moneyPerDay > 5000) {
+        console.log("Высокий уровень достатка");
+    } else {
+        console.log("Произошла ошибка");
+    }
+}
+
+detectLevel(); //Вызываем функцию
+
 
 function checkSavings() { //Объявляем функцию (Рассчет накоплений с депозита, если он есть)
     if (appData.savings == true) { //Действительно ли ровняется true(чтобы функция работала, в объекте appData savings задать значение true)
